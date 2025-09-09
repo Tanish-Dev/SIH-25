@@ -70,6 +70,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Health check endpoint
+@api_router.get("/health")
+async def health_check():
+    return {"status": "healthy", "timestamp": datetime.utcnow()}
+
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
