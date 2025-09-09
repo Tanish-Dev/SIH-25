@@ -48,7 +48,7 @@ export default function Layout() {
               <Menu className="w-5 h-5 text-slate-600" />
             </button>
             <Link to="/" className="text-xl font-bold text-slate-900 tracking-tight">
-              BlueCarbon
+              BluCarbon
             </Link>
           </div>
 
