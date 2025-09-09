@@ -25,7 +25,7 @@ export default function Chip({
     
     switch (variant) {
       case 'primary':
-        return 'bg-green-600 text-white border-green-600';
+        return 'bg-[#00e07a] text-white border-[#00e07a]';
       case 'success':
         return 'bg-emerald-50 text-emerald-800 border-emerald-200';
       case 'warning':

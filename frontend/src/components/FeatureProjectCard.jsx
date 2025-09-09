@@ -44,7 +44,7 @@ export default function FeatureProjectCard({ project }) {
 
           {/* CTA Button */}
           <div className="pt-4">
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-medium text-base shadow-sm hover:shadow-md transition-all duration-200">
+            <Button className="bg-[#00e07a] hover:bg-green-700 text-white px-8 py-3 rounded-xl font-medium text-base shadow-sm hover:shadow-md transition-all duration-200">
               Open Project
               <ExternalLink className="w-4 h-4 ml-2" />
             </Button>

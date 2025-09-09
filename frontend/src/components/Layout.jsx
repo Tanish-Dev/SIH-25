@@ -53,18 +53,11 @@ export default function Layout() {
           </div>
 
           {/* Center: Navigation (optional for desktop) */}
-          <div className="hidden lg:flex items-center gap-6">
-            <Link to="/about" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
-              About
-            </Link>
-            <Link to="/services" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">
-              Services
-            </Link>
-          </div>
+          
 
           {/* Right: CTA and Icon Button */}
           <div className="flex items-center gap-3">
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl font-medium shadow-sm">
+            <Button className="bg-[#00e07a] hover:bg-[#00b86b] text-black px-6 py-2 rounded-xl font-medium shadow-sm">
               Start a Project
             </Button>
             <Button variant="outline" size="sm" className="w-9 h-9 p-0 rounded-lg border-slate-200 hover:border-slate-300">
@@ -114,7 +107,7 @@ export default function Layout() {
                     {!sidebarCollapsed && (
                       <>
                         <span className="font-medium">{item.label}</span>
-                        {isActive && <div className="w-2 h-2 bg-green-600 rounded-full ml-auto" />}
+                        {isActive && <div className="w-2 h-2 bg-[#00e07a] rounded-full ml-auto" />}
                       </>
                     )}
                   </Link>
