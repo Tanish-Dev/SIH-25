@@ -14,10 +14,14 @@ from datetime import datetime
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
-mongo_url = os.environ['MONGO_URL']
+# MongoDB connection with fallback for environment variables
+mongo_url = os.environ.get('MONGO_URL') or os.environ.get('MONGODB_URI')
+if not mongo_url:
+    raise ValueError("MONGO_URL or MONGODB_URI environment variable is required")
+
 client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+db_name = os.environ.get('DB_NAME', 'sih25_db')
+db = client[db_name]
 
 # Create the main app without a prefix
 app = FastAPI()
@@ -78,3 +82,6 @@ async def health_check():
 @app.on_event("shutdown")
 async def shutdown_db_client():
     client.close()
+
+# Vercel handler
+handler = app
