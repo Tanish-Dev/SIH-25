@@ -47,8 +47,9 @@ export default function Layout() {
             >
               <Menu className="w-5 h-5 text-slate-600" />
             </button>
-            <Link to="/" className="text-xl font-bold text-slate-900 tracking-tight">
+            <Link to="/" className="text-xl font-bold text-slate-900 tracking-tight relative">
               BluCarbon
+              <span className="absolute left-[3%] bottom-[-4px] w-[30%] h-[3.8px] bg-[#00e07a]"></span>
             </Link>
           </div>
 

@@ -10,11 +10,11 @@ export default function Dashboard() {
       {/* Hero Section */}
       <div className="space-y-2">
         <h1 className="text-3xl font-bold text-slate-900 leading-tight tracking-tight ">
-         Welcome 👋<br />
+         Hello<br />
         </h1>
         <p className="text-5xl text-slate-900 font-bold max-w-2xl tracking-tighter
 ">
-         Mr. Tanish
+         User
         </p>
       </div>
 
@@ -69,11 +69,6 @@ export default function Dashboard() {
           </Button>
         </div>
       </div>
-
-      {/* Feature Project Card */}
-      <FeatureProjectCard project={mockProject} />
-
-      {/* Map and Activity Section */}
       <div className="grid lg:grid-cols-2 gap-8">
         {/* India Coastal Map Widget */}
         <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-slate-300 transition-colors shadow-sm">
@@ -126,6 +121,12 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
+
+      {/* Feature Project Card */}
+      <FeatureProjectCard project={mockProject} />
+
+      {/* Map and Activity Section */}
+      
 
     </div>
   );
