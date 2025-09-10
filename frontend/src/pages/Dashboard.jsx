@@ -1,5 +1,6 @@
 import React from 'react';
 import FeatureProjectCard from '../components/FeatureProjectCard';
+import ProjectMap from '../components/ProjectMap';
 import { mockProject, mockActivity } from '../mock';
 import { Button } from '../components/ui/button';
 import { Upload, BarChart3, FileText, Coins, Clock } from 'lucide-react';
@@ -70,34 +71,8 @@ export default function Dashboard() {
         </div>
       </div>
       <div className="grid lg:grid-cols-2 gap-8">
-        {/* India Coastal Map Widget */}
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-slate-300 transition-colors shadow-sm">
-          <h3 className="text-xl font-semibold text-slate-900 mb-4">
-            Active Projects - India Coast
-          </h3>
-          <div className="h-64 bg-gradient-to-br from-sky-50 to-emerald-50 rounded-xl flex items-center justify-center relative overflow-hidden">
-            {/* Simplified India coastline representation */}
-            <div className="absolute inset-4 border-2 border-green-500 rounded-lg opacity-60"></div>
-            <div className="absolute top-8 right-8 w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
-            <div className="absolute bottom-12 left-12 w-3 h-3 bg-[#00e07a] rounded-full animate-pulse"></div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-slate-900 mb-2">2 Active</div>
-              <div className="text-sm text-slate-600">Blue Carbon Projects</div>
-            </div>
-          </div>
-          
-          {/* Simple Legend */}
-          <div className="flex items-center gap-6 mt-4">
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-              <span className="text-sm text-slate-600">Mangrove</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-green-600 rounded-full"></div>
-              <span className="text-sm text-slate-600">Seagrass</span>
-            </div>
-          </div>
-        </div>
+        {/* Real Map Component */}
+        <ProjectMap />
 
         {/* Activity Feed */}
         <div className="bg-white border border-slate-200 rounded-2xl p-6 hover:border-slate-300 transition-colors shadow-sm">
