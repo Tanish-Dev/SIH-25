@@ -65,9 +65,24 @@ export const mockCredits = [
     projectId: "project-1",
     metadata: {
       mrv_hash: "0x8f9c1a7b23d4e567f890a1b2c3d4e5f6789abcdef123456789abcdef0123bd3a",
-      data_bundle_uri: "ipfs://QmYx8J9K2nR7VwXzT4pQ8mN3oL6vE9sB1cA5dF2gH7iJ8k",
+      data_bundle_uri: "ipfs://QmX4h7...",
       methodology_id: "VM0033_v2.1",
       project_geohash: "tdr1y4k8g9j2",
+      uncertainty_class: "U2"
+    }
+  },
+  {
+    id: "#10232",
+    vintage: "2024",
+    methodology: "VM0033",
+    amount: 12.5,
+    status: "Draft",
+    projectId: "project-2",
+    metadata: {
+      mrv_hash: "0x7e8d9c6b54a321f890b1c2d3e4f5g678h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4",
+      data_bundle_uri: "ipfs://QmY5k8...",
+      methodology_id: "VM0033_v2.1",
+      project_geohash: "tdr1y4k8g9j3",
       uncertainty_class: "U2"
     }
   }

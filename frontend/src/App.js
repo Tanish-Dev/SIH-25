@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import FieldCapture from "./pages/FieldCapture";
 import DMRVStudio from "./pages/DMRVStudio";
+import Credits from "./pages/Credits";
 import Admin from "./pages/Admin";
 import Settings from "./pages/Settings";
 import { Toaster } from "./components/ui/toaster";
@@ -20,7 +21,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/field-capture" element={<FieldCapture />} />
             <Route path="/dmrv-studio" element={<DMRVStudio />} />
-            <Route path="/credits" element={<div className="p-8 text-center text-slate-600">Credits - Coming Soon</div>} />
+            <Route path="/credits" element={<Credits />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/settings" element={<Settings />} />
           </Route>
