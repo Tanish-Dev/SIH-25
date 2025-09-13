@@ -113,6 +113,7 @@ export const navItems = [
   { id: "field-capture", label: "Field Capture", path: "/field-capture" },
   { id: "dmrv-studio", label: "dMRV Studio", path: "/dmrv-studio" },
   { id: "credits", label: "Credits", path: "/credits" },
+  { id: "marketplace", label: "Marketplace", path: "/marketplace" },
   { id: "admin", label: "Admin", path: "/admin" },
   { id: "settings", label: "Settings", path: "/settings" }
 ];

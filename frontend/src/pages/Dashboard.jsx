@@ -3,9 +3,12 @@ import FeatureProjectCard from '../components/FeatureProjectCard';
 import ProjectMap from '../components/ProjectMap';
 import { mockProject, mockActivity } from '../mock';
 import { Button } from '../components/ui/button';
-import { Upload, BarChart3, FileText, Coins, Clock } from 'lucide-react';
+import { Upload, BarChart3, FileText, ShoppingCart, Clock } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard() {
+  const navigate = useNavigate();
+
   return (
     <div className="space-y-12">
       {/* Hero Section */}
@@ -28,6 +31,7 @@ export default function Dashboard() {
           <Button 
             variant="outline" 
             className="h-auto p-6 flex-col gap-3 border-slate-200 hover:border-slate-300 hover:bg-slate-50 shadow-sm hover:shadow-md transition-all duration-200"
+            onClick={() => navigate('/projects')}
           >
             <Upload className="w-6 h-6 text-green-600" />
             <div className="text-center">
@@ -39,6 +43,7 @@ export default function Dashboard() {
           <Button 
             variant="outline" 
             className="h-auto p-6 flex-col gap-3 border-slate-200 hover:border-slate-300 hover:bg-slate-50 shadow-sm hover:shadow-md transition-all duration-200"
+            onClick={() => navigate('/field-capture')}
           >
             <BarChart3 className="w-6 h-6 text-emerald-600" />
             <div className="text-center">
@@ -50,6 +55,7 @@ export default function Dashboard() {
           <Button 
             variant="outline" 
             className="h-auto p-6 flex-col gap-3 border-slate-200 hover:border-slate-300 hover:bg-slate-50 shadow-sm hover:shadow-md transition-all duration-200"
+            onClick={() => navigate('/dmrv-studio')}
           >
             <FileText className="w-6 h-6 text-sky-600" />
             <div className="text-center">
@@ -61,11 +67,12 @@ export default function Dashboard() {
           <Button 
             variant="outline" 
             className="h-auto p-6 flex-col gap-3 border-slate-200 hover:border-slate-300 hover:bg-slate-50 shadow-sm hover:shadow-md transition-all duration-200"
+            onClick={() => navigate('/marketplace')}
           >
-            <Coins className="w-6 h-6 text-amber-600" />
+            <ShoppingCart className="w-6 h-6 text-purple-600" />
             <div className="text-center">
-              <div className="font-medium text-slate-900">Issue Credits</div>
-              <div className="text-sm text-slate-600 mt-1">Mint carbon credits</div>
+              <div className="font-medium text-slate-900">Marketplace</div>
+              <div className="text-sm text-slate-600 mt-1">Browse carbon credits</div>
             </div>
           </Button>
         </div>

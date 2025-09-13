@@ -9,6 +9,7 @@ import {
   MapPin, 
   Microscope, 
   Coins, 
+  ShoppingCart,
   Shield, 
   Settings,
   ChevronLeft,
@@ -22,6 +23,7 @@ const iconMap = {
   'field-capture': MapPin,
   'dmrv-studio': Microscope,
   credits: Coins,
+  marketplace: ShoppingCart,
   admin: Shield,
   settings: Settings
 };
